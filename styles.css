@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500&family=Parisienne&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem;
+  background-color: #fff2f2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #e4d0d0;
+  width: 100%;
+  margin: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav button {
+  border-radius: 50%;
+  margin-right: 34rem;
+  outline: none;
+  background-color: #e4d0d0;
+  border-color: #e4d0d0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 2rem;
+  overflow: hidden;
+  font-size: 27px;
+}
+
+nav li {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+li a {
+  padding-left: 0.5rem;
+  color: #f5ebeb;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #867070;
+  height: fit-content;
+}
+
+.fas {
+  color: #f5ebeb;
+}
+
+.navbar-img {
+  border-radius: 50%;
+}
+
+/* Title Container */
+
+.title-container {
+  background-color: #e4d0d0;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-cloud {
+  text-align: center;
+  width: 100%;
+  background-image: url("clouds.png");
+  background-position: right 85% bottom 40%;
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.left-cloud {
+  background-image: url("cloud-computing.png");
+  background-position: top right;
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+
+.title-container h2 {
+  font-family: "Parisienne", cursive;
+  font-size: 120px;
+  font-weight: 500;
+  color: #867070;
+  margin-bottom: 0;
+  margin-top: 4rem;
+}
+
+.title-container h5 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #867070;
+  margin-top: 0;
+}
+
+.hello-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About Me Container */
+
+.aboutme-container {
+  background-color: #f5ebeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #867070;
+}
+
+.aboutme-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+.aboutme-container h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.aboutme-container p {
+  width: 55ch;
+  line-height: 2ch;
+  margin-bottom: 0;
+}
+
+/* Projects Container */
+
+#projects {
+  background-color: #f5ebeb;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 4rem;
+  overflow-x: hidden;
+}
+
+.project-box {
+  background-color: #f5ebeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.project-box.show {
+  transform: translateX(0);
+}
+
+#projects h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  color: #867070;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.simongame {
+  background-image: url("Simon-game.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10rem;
+}
+
+.breakout {
+  background-image: url("Breakout.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 40rem;
+}
+
+/* Projects Container / Contact Me Button */
+
+#projects a {
+  text-decoration: none;
+}
+
+.button-45 {
+  align-items: center;
+  background-color: #f5ebeb;
+  background-position: 0 0;
+  border: 1px solid #fee0e0;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #867070;
+  cursor: pointer;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg)
+    none;
+  padding: 2px 12px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.button-45:active,
+.button-45:hover,
+.button-45:focus {
+  outline: 0;
+}
+
+.button-45:active {
+  background-color: #867070;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+.button-45:hover {
+  background-color: #ffe3e3;
+  border-color: #faa4a4;
+}
+
+.button-45:active:hover,
+.button-45:focus:hover,
+.button-45:focus {
+  background-color: #867070;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #ffffff;
+}
+
+/* Contact Me Container */
+
+.contactme-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #e4d0d0;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: #867070;
+  text-align: center;
+  font-weight: 500;
+  line-height: 2ch;
+}
+
+.contactme-container h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.contactme-container p {
+  margin-bottom: 2rem;
+}
+
+.contactme-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("digital-nomad.png");
+  background-repeat: no-repeat;
+  background-position: left 75% bottom 50%;
+}
+
+.contactme-image {
+  width: 600px;
+  height: 600px;
+}
+
+.icons {
+  margin-top: 19.5rem;
+  margin-right: 4.4rem;
+}
+
+.contactme-email-container {
+  margin-top: 12rem;
+  margin-left: 8rem;
+  width: 35ch;
+}
+
+.contactme-email-container a {
+  text-decoration: none;
+}
+
+.contactme-email-container button {
+  margin-left: 7rem;
+}
+
+.contactme-email-container i {
+  margin-left: 0.5rem;
+  color: #d5b4b4;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+footer p {
+  color: #867070;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 400px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .title-container {
+    width: 100%;
+  }
+  nav {
+    overflow: hidden;
+  }
+  nav li {
+    display: none;
+  }
+  .hello-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+  .title-container h2 {
+    font-size: 30px;
+  }
+  .title-container h5 {
+    font-size: 5px;
+  }
+  .left-cloud img {
+    width: 200px;
+  }
+  .right-cloud {
+    display: grid;
+    grid-template-columns: 2;
+    background-image: none;
+  }
+  .left-cloud {
+    background-image: none;
+  }
+
+  .aboutme-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutme-container p {
+    font-size: 15px;
+    width: 24ch;
+  }
+  .aboutme-image {
+    justify-self: center;
+  }
+  .contactme-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contactme-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: none;
+  }
+  .contactme-image {
+    width: 100%;
+    height: 100%;
+  }
+  .contactme-email-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .contactme-email-container p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    width: 15ch;
+  }
+  .contactme-email-container button {
+    margin-left: 0;
+  }
+  .icons {
+    margin-left: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #projects {
+    max-width: 100vh;
+    overflow-x: hidden;
+  }
+  #projects h4 {
+    font-size: 25px;
+  }
+  .project-box {
+    width: 250px;
+    height: 150px;
+  }
+  .simongame {
+    margin-left: 1rem;
+    background-size: cover;
+  }
+  .breakout {
+    margin-left: 1rem;
+    background-size: cover;
+  }
+
+  .contactme-container h3 {
+    font-size: 25px;
+  }
+  footer p {
+    width: 15ch;
+  }
+
+}
+
+@media (max-width: 942px) and (min-width: 600px) {
+  nav {
+    overflow: hidden;
+  }
+  nav ul {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: auto;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  #projects {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .simongame {
+    margin-left: 15rem;
+  }
+  .breakout {
+    margin-left: 15rem;
+  }
+  .contactme-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contactme-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: none;
+  }
+  .contactme-image {
+    width: 100%;
+    height: 100%;
+  }
+  .contactme-email-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .contactme-email-container p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25ch;
+    margin-left: 25rem;
+  }
+  .contactme-email-container h3 {
+    width: 25ch;
+    margin-left: 25rem;
+  }
+  .icons {
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+}
